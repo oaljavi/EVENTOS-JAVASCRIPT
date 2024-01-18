@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Eventos</title>
+
+	<script>
+		function sobreMi(){
+		alert('Estas escribiendo sobre este encabezado');
+		}
+	
+		function abrir(){ 
+		window.open('https://oalhuetortajar.com/', '_self');
+		}
+		
+		function colorRojo(){ 
+		document.getElementById('color').style.color='red';
+		}
+
+		function colorNegro(){ 
+		document.getElementById('color').style.color='black';
+		}
+	</script>
+
+</head>
+
+
+<!--<body onload="alert('Hola, has abierto mi página web')">-->
+<body>
+	<p onclick="alert('Has hecho un clic')">Bienvenidos</p>
+
+	<button ondblclick="alert('Que máquina')">Haz doble click</p> </button>
+		
+	<h1 onmouseover="sobreMi()">Pasa por encima</h1>
+	
+	<button> <p onkeydown="alert('Has pulsado una tecla')">Pulsa una tecla</p> </button>
+
+	<br>
+	
+	<button onclick="abrir()">Ir al OAL</button>
+
+	<h1 id="color">Esto cambia de color</h1>
+	<button onmouseover="colorRojo()" onmouseout="colorNegro()">Cambiar</button>
+
+</body>
+
+
+</html>
